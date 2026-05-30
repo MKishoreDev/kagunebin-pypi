@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kagunebin"
+version = "1.0.0"
+description = "Official Python SDK for KaguneBin paste sharing service"
+readme = "README.md"
+authors = [
+{ name = "Kishore" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+dependencies = [
+"requests"
+]
+
+keywords = [
+"pastebin",
+"kagunebin",
+"paste",
+"code-sharing",
+"snippet",
+"text-sharing"
+]
+
+classifiers = [
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://kagunebin.vercel.app"
+Repository = "https://github.com/MKishoreDev/kagunebin-pypi"
+Documentation = "https://kagunebin.vercel.app/docs"

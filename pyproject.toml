@@ -4,35 +4,51 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kagunebin"
-version = "1.0.0"
-description = "Official Python SDK for KaguneBin paste sharing service"
+version = "1.0.1"
+description = "Official Python SDK for KaguneBin anonymous paste sharing service"
 readme = "README.md"
 authors = [
-{ name = "Kishore" }
+    { name = "Kishore M" }
 ]
 license = { text = "MIT" }
 requires-python = ">=3.8"
 
 dependencies = [
-"requests"
+    "requests>=2.28.0"
 ]
 
 keywords = [
-"pastebin",
-"kagunebin",
-"paste",
-"code-sharing",
-"snippet",
-"text-sharing"
+    "pastebin",
+    "kagunebin",
+    "paste",
+    "code-sharing",
+    "snippet",
+    "text-sharing",
+    "anonymous-paste"
 ]
 
 classifiers = [
-"Programming Language :: Python :: 3",
-"License :: OSI Approved :: MIT License",
-"Operating System :: OS Independent"
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.optional-dependencies]
+async = [
+    "httpx>=0.24.0"
 ]
 
 [project.urls]
 Homepage = "https://kagunebin.vercel.app"
 Repository = "https://github.com/MKishoreDev/kagunebin-pypi"
 Documentation = "https://kagunebin.vercel.app/docs"
+"Bug Tracker" = "https://github.com/MKishoreDev/kagunebin-pypi/issues"
+"Web App" = "https://kagunebin.vercel.app"
